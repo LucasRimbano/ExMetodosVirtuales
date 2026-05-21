@@ -23,6 +23,9 @@ El programa muestra una ventana con un botón que permite dibujar distintas figu
 
 Cada figura hereda de una clase base `Figura` y redefine el método `Dibujar()`, utilizando métodos virtuales y `override`.
 
+## Vista del proyecto
+
+![Figuras con colores distintos](Imagenes/colores-distintos.png)
 
 ## Autor
 
