@@ -13,11 +13,14 @@ namespace Figuras
         public Form1()
         {
             InitializeComponent();
+
+            this.Text = "Colores distintos";
+
             figuras = new Figura[3] 
             {
-                new Circulo(60),
-                new Rectangulo(30,50),
-                new Cuadrado(45),
+                new Circulo(60,Color.Red),
+                new Rectangulo(30,50,Color.Blue),
+                new Cuadrado(45,Color.Green),
             };
 
         }
@@ -25,11 +28,10 @@ namespace Figuras
         private void button1_Click(object sender, EventArgs e)
         {
             Graphics gr = pictureBox1.CreateGraphics();
-            //cambio a lapiz rojo
-            Pen pen = new Pen(Color.Red);
+              //cada figura crea su propio pen segund el color en su constructor
             for (int i = 0; i < figuras.Length; i++)
             {
-                figuras[i].Dibujar(pen,gr,i * 100, 50);
+                figuras[i].Dibujar(gr,i * 100, 50);
             }
 
         }
