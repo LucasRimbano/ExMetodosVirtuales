@@ -23,9 +23,28 @@ El programa muestra una ventana con un botón que permite dibujar distintas figu
 
 Cada figura hereda de una clase base `Figura` y redefine el método `Dibujar()`, utilizando métodos virtuales y `override`.
 
-## Vista del proyecto
+## Vista del proyecto 
+## Consigna 2 creando colores distintos
 
 ![Figuras con colores distintos](Imagenes/colores-distintos.png)
+
+## Consigna 3 - Colores aleatorios RGB
+
+Para cumplir con la consigna 3, los colores de las figuras se generan aleatoriamente utilizando la clase `Random` y el método `Color.FromArgb()`.
+
+Cada vez que se ejecuta el programa, las figuras pueden aparecer con colores diferentes.
+
+### Ejecución 1
+
+![Figuras con colores aleatorios 1](Imagenes/colores-random-1.png)
+
+### Ejecución 2
+
+![Figuras con colores aleatorios 2](Imagenes/colores-random-2.png)
+
+### Ejecución 3
+
+![Figuras con colores aleatorios 3](Imagenes/colores-random-3.png)
 
 ## Autor
 
