@@ -46,6 +46,15 @@ Cada vez que se ejecuta el programa, las figuras pueden aparecer con colores dif
 
 ![Figuras con colores aleatorios 3](Imagenes/colores-random-3.png)
 
+## Consigna 4 - Tamaños crecientes
+
+Para cumplir con la consigna 4, las tres figuras se muestran con tamaños proporcionalmente crecientes, vistas de izquierda a derecha.
+
+De esta manera, la primera figura aparece con un tamaño menor, la segunda con un tamaño intermedio y la tercera con un tamaño mayor.
+
+![Figuras con tamaños crecientes](Imagenes/colores-distintos-tamaño.png)
+
+
 ## Autor
 
 Proyecto realizado con fines educativos.  
