@@ -19,9 +19,9 @@ namespace Figuras
 
             figuras = new Figura[3] 
             {
-                new Circulo(60,ColorAleatorio()),
-                new Rectangulo(30,50,ColorAleatorio()),
-                new Cuadrado(45,ColorAleatorio()),
+                new Circulo(20,ColorAleatorio()),
+                new Rectangulo(40,60,ColorAleatorio()),
+                new Cuadrado(95,ColorAleatorio()),
             };
 
         }
@@ -41,8 +41,8 @@ namespace Figuras
             Graphics gr = pictureBox1.CreateGraphics();
               //cada figura crea su propio pen segund el color en su constructor
             for (int i = 0; i < figuras.Length; i++)
-            {
-                figuras[i].Dibujar(gr,i * 100, 50);
+            {   // aumento la cordenada x para que halla mas espacio entre cada figura
+                figuras[i].Dibujar(gr, 15+ i * 125, 50);
             }
 
         }
