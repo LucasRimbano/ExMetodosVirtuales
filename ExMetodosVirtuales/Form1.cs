@@ -15,7 +15,7 @@ namespace Figuras
         {
             InitializeComponent();
 
-            this.Text = "Colores aleatorios rgb";
+            this.Text = "Colores en distinto tamaño y color rgb";
 
             figuras = new Figura[3] 
             {
