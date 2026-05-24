@@ -54,6 +54,13 @@ De esta manera, la primera figura aparece con un tamaño menor, la segunda con u
 
 ![Figuras con tamaños crecientes](Imagenes/colores-distintos-tamaño.png)
 
+## Consigna 5 - Nuevas figuras
+
+Para cumplir con la consigna 5, se agregaron dos nuevas figuras al modelo de clases: `Triangulo` y `Rombo`.
+
+Ambas clases heredan de `Figura` y redefinen el método `Dibujar()` para poder mostrarse en pantalla. De esta manera, el programa ahora dibuja cinco figuras distintas utilizando polimorfismo.
+
+![Cinco formas distintas](Imagenes/5-formas-distintas.png)
 
 ## Autor
 
