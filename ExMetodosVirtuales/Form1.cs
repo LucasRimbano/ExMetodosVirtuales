@@ -15,21 +15,31 @@ namespace Figuras
         {
             InitializeComponent();
 
-            this.Text = "5 formas disntinas con colores en distinto tamaño y color rgb";
+            this.Text = "6 formas distintas con colores en distinto tamaño y color rgb";
 
-            this.Width = 800;
-            this.Height = 300;
+            this.Width =1450;
+            this.Height = 350;
 
-            pictureBox1.Width = 750;
-            pictureBox1.Height = 200;
+            pictureBox1.Width = 1350;
+            pictureBox1.Height = 230;
 
-            figuras = new Figura[5] 
+            pictureBox1.Left = 20;
+            pictureBox1.Top = 1;
+
+           
+            dibujarButton.Left = 20;
+            dibujarButton.Top = 270;
+
+
+
+            figuras = new Figura[6] 
             {
                 new Circulo(20,ColorAleatorio()),
                 new Rectangulo(40,60,ColorAleatorio()),
                 new Cuadrado(95,ColorAleatorio()),
-                new Triangulo(120,ColorAleatorio()),
-                new Rombo (150,ColorAleatorio())
+                new TrianguloEquilatero(120,ColorAleatorio()),
+                new TrianguloIsosceles(150,130,ColorAleatorio()),
+                new Rombo (180,ColorAleatorio())
             };
 
         }
@@ -50,7 +60,7 @@ namespace Figuras
               //cada figura crea su propio pen segund el color en su constructor
             for (int i = 0; i < figuras.Length; i++)
             {   // aumento la cordenada x para que halla mas espacio entre cada figura
-                figuras[i].Dibujar(gr, 15+ i * 125, 50);
+                figuras[i].Dibujar(gr, 1 + i * 140 , 40);
             }
 
         }

@@ -74,11 +74,11 @@ namespace Figuras
         }
     }
 
-    public class Triangulo : Figura
+    public class TrianguloEquilatero : Figura
     {
         private int lado;
         
-        public Triangulo(int lado ,Color color) : base(color)
+        public TrianguloEquilatero(int lado ,Color color) : base(color)
         {
             this.lado = lado;
         }
@@ -95,6 +95,31 @@ namespace Figuras
 
             };
             graphics.DrawPolygon(pen,points);
+        }
+
+    }
+
+    public class TrianguloIsosceles : Figura {
+        private int baseTriangulo;
+        private int altura;
+
+        public TrianguloIsosceles(int baseTriangulo ,int altura,Color color) : base(color)
+        {
+            this.baseTriangulo = baseTriangulo;
+            this.altura = altura;
+        }
+
+        public override void Dibujar(Graphics graphics, int x, int y)
+        {
+            Pen pen = CrearPen();
+
+            Point[] points = new Point[3]
+            {
+                new Point(x+baseTriangulo /2,y),
+                new Point(x,y+altura),
+                new Point(x+baseTriangulo,y+altura)
+            };
+            graphics.DrawPolygon(pen, points);
         }
 
     }
