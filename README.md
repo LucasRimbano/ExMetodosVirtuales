@@ -74,7 +74,7 @@ Todas las figuras se dibujan utilizando polimorfismo, ya que el arreglo contiene
 
 En esta ejecución se muestran seis figuras distintas con colores aleatorios RGB y tamaños crecientes.
 
-![Seis figuras con colores distintos](Imagenes/6-colores-distintos.png)
+![Seis figuras con colores distintos](Imagenes/6-formas-distintas.png)
 
 ## Autor
 
