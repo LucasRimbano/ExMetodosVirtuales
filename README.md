@@ -62,6 +62,20 @@ Ambas clases heredan de `Figura` y redefinen el método `Dibujar()` para poder m
 
 ![Cinco formas distintas](Imagenes/5-formas-distintas.png)
 
+## Consigna 5 - Nuevas figuras
+
+Para cumplir con la consigna 5, se agregaron dos nuevas figuras al modelo de clases: `TrianguloIsosceles` y `TrianguloEquilatero`.
+
+Inicialmente interpreté que la consigna pedía agregar dos figuras nuevas a elección, por eso había agregado la clase `Rombo`. Luego, al revisar nuevamente el enunciado, corregí el modelo agregando los dos triángulos solicitados.
+
+De todas formas, decidí mantener el `Rombo` como una figura adicional, ya que también hereda de `Figura` y redefine el método `Dibujar()`, respetando el mismo diseño orientado a objetos del proyecto.
+
+Todas las figuras se dibujan utilizando polimorfismo, ya que el arreglo contiene objetos de tipo `Figura`, pero cada clase implementa su propia forma de dibujarse.
+
+En esta ejecución se muestran seis figuras distintas con colores aleatorios RGB y tamaños crecientes.
+
+![Seis figuras con colores distintos](Imagenes/6-colores-distintos.png)
+
 ## Autor
 
 Proyecto realizado con fines educativos.  
