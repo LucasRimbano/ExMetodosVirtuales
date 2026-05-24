@@ -15,13 +15,21 @@ namespace Figuras
         {
             InitializeComponent();
 
-            this.Text = "Colores en distinto tamaño y color rgb";
+            this.Text = "5 formas disntinas con colores en distinto tamaño y color rgb";
 
-            figuras = new Figura[3] 
+            this.Width = 800;
+            this.Height = 300;
+
+            pictureBox1.Width = 750;
+            pictureBox1.Height = 200;
+
+            figuras = new Figura[5] 
             {
                 new Circulo(20,ColorAleatorio()),
                 new Rectangulo(40,60,ColorAleatorio()),
                 new Cuadrado(95,ColorAleatorio()),
+                new Triangulo(120,ColorAleatorio()),
+                new Rombo (150,ColorAleatorio())
             };
 
         }

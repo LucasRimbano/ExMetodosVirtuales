@@ -73,4 +73,51 @@ namespace Figuras
             graphics.DrawEllipse(pen,x,y, radio, radio);
         }
     }
+
+    public class Triangulo : Figura
+    {
+        private int lado;
+        
+        public Triangulo(int lado ,Color color) : base(color)
+        {
+            this.lado = lado;
+        }
+
+        public override void Dibujar(Graphics graphics, int x, int y)
+        {
+            Pen pen = CrearPen();
+
+            Point[] points = new Point[3]
+            {
+                new Point(x+lado /2,y),
+                new Point(x,y+lado),
+                new Point(x+lado,y+lado)
+
+            };
+            graphics.DrawPolygon(pen,points);
+        }
+
+    }
+
+    public class Rombo : Figura
+    {
+        private int lado;
+
+        public Rombo(int lado, Color color) : base(color)
+        { this.lado = lado; 
+        }
+        public override void Dibujar(Graphics graphics, int x, int y)
+        {
+            Pen pen = CrearPen();
+            Point[] points = new Point[4]
+                {
+                    new Point(x+lado/2,y),
+                    new Point (x+lado,y+lado /2),
+                    new Point(x+lado/2 ,y+lado),
+                    new Point(x,y+lado /2)
+                };
+            graphics.DrawPolygon(pen, points);
+        }
+
+    }
 }
